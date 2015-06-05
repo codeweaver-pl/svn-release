@@ -1,0 +1,22 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "latedef": false,
+  "newcap": true,
+  "noarg": true,
+  "sub": true,
+  "boss": true,
+  "multistr": true,
+  "eqnull": true,
+  "globalstrict": true,
+  "node": true,
+  "jasmine": true,
+  "globals": {
+    "_": true,
+    "global": true,
+    "console": false,
+    "sprintf": true,
+    "$": false
+  }
+}
