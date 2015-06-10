@@ -1,6 +1,6 @@
 {
   "name": "svn-release",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Subversion release toolkit for node.js projects",
   "author": "Tomasz Zabłocki <waxxfetish@gmail.com>",
   "license": "MIT",
