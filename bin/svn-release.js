@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-var app = require('../index'),
+var app = require('../lib/svn-release'),
   mkdirp = require('mkdirp');
 
 mkdirp('./dist', function (error) {
