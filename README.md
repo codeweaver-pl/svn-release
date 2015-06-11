@@ -1,6 +1,8 @@
 svn-release
 ====
 
+[![Join the chat at https://gitter.im/tau-labs/svn-release](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/tau-labs/svn-release?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Subversion release toolkit for node.js projects
 
 [![CircleCI](https://img.shields.io/circleci/project/tau-labs/svn-release/master.svg?style=shield)](https://circleci.com/gh/tau-labs/svn-release)
