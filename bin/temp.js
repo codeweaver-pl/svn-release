@@ -42,7 +42,7 @@ function svnReleaseSteps(config) {
 
   function readPackageJsonStep() {
     return async.seq(
-      _.bind(fs.readFile, null, './package.json', {encoding: this.config.encoding}),
+      _.partial(fs.readFile, './package.json', {encoding: this.config.encoding}),
       function (data, callback) {
         callback(null, JSON.parse(data));
       }
@@ -62,7 +62,7 @@ function svnReleaseSteps(config) {
   }
 
   function commitStep(message) {
-    return _.bind(this.svn.ci, this.svn, [], message);
+    return _.partial(this.svn.ci, [], message);
   }
 
   return new SvnReleaseSteps(config);
