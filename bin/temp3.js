@@ -1,28 +1,15 @@
 "use strict";
 var _ = require('lodash');
-var async = require('async');
+var q = require('q');
+var SVN = require('../lib/node.svn-extended');
 
-function f1(arg1) {
-  return function (callback) {
-    callback(null, 2 * arg1);
-  }
+function QSVN(config) {
+  this.svn = new SVN(config);
+  this.info = q.nbind(this.svn.info, this.svn);
+  this.status = q.nbind(this.svn.st, this.svn);
 }
 
-function f2(arg1, arg2, callback) {
-  callback(null, arg2 + arg1);
-}
-
-function f3(arg1) {
-  return function (argx, callback) {
-    callback(null, argx * arg1);
-  }
-}
-
-function f4() {
-  return _.partial(f2, 5);
-}
-
-
-var x = async.seq(f1(1), f3(-1), f4());
-
-x(console.log);
+var s = new QSVN({cwd:'.'});
+s.status().then(function(data) {
+  console.log(data);
+}).fail(console.log).done();
