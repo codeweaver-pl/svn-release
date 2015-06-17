@@ -5,8 +5,6 @@ var _ = require('lodash'),
   sprintf = require('sprintf'),
   fs = require('fs');
 
-function svnReleaseSteps(config) {
-
   function SvnReleaseSteps(config) {
     this.config = config;
     this.svn = new Svn();
@@ -65,8 +63,6 @@ function svnReleaseSteps(config) {
     return _.partial(this.svn.ci, [], message);
   }
 
-  return new SvnReleaseSteps(config);
-}
 
 
-async.series([svnReleaseSteps({encoding: 'utf-8'}).setVersionStep('0.1.9')], console.log);
+async.series([new SvnReleaseSteps({encoding: 'utf-8'}).setVersionStep('0.1.9')], console.log);
