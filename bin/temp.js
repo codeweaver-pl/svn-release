@@ -50,6 +50,7 @@ function svnReleaseSteps(config) {
   }
 
   function storePackageJsonStep() {
+    var options = {encoding:this.config.encoding};
     return function(packageJson, callback) {
     try {
       var data = _.isObject(packageJson) ? JSON.stringify(packageJson, null, '  ') : packageJson;
@@ -57,7 +58,8 @@ function svnReleaseSteps(config) {
     } catch(err) {
       callback(err);
     }
-  };
+  }
+  }
 
   function commitStep(message) {
     return _.bind(this.svn.ci, this.svn, [], message);
@@ -67,4 +69,4 @@ function svnReleaseSteps(config) {
 }
 
 
-async.series([svnReleaseSteps({encoding: 'utf-8'}).setVersionStep('0.0.9')], console.log);
+async.series([svnReleaseSteps({encoding: 'utf-8'}).setVersionStep('0.1.9')], console.log);

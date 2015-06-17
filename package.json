@@ -1,1 +1,42 @@
-null
+{
+  "name": "svn-release",
+  "version": "0.1.9",
+  "description": "Subversion release toolkit for node.js projects",
+  "author": "Tomasz Zabłocki <waxxfetish@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "svn",
+    "subversion",
+    "node",
+    "nodejs",
+    "release",
+    "branch",
+    "tag"
+  ],
+  "dependencies": {
+    "async": "^1.2.1",
+    "commander": "^2.8.1",
+    "lodash": "^3.9.3",
+    "mkdirp": "^0.5.1",
+    "node.svn": "0.1.8",
+    "q": "^1.4.1",
+    "semver": "4.1.0",
+    "sprintf": "^0.1.5",
+    "yargs": "1.3.3"
+  },
+  "devDependencies": {
+    "jasmine-node": "2.0.0-beta4",
+    "jasmine-reporters": "2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tau-labs/svn-release"
+  },
+  "main": "lib/svn-release.js",
+  "scripts": {
+    "test": "jasmine-node ./spec"
+  },
+  "bin": {
+    "nsvnr": "bin/svn-release.js"
+  }
+}
