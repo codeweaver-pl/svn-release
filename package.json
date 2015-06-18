@@ -32,7 +32,7 @@
     "type": "git",
     "url": "https://github.com/tau-labs/svn-release"
   },
-  "main": "lib/svn-release.js",
+  "main": "lib/svn-release-steps.js",
   "scripts": {
     "test": "jasmine-node ./spec"
   },
