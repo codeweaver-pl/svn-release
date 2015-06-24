@@ -1,3 +1,12 @@
 machine:
+  environment:
+    CODECLIMATE_REPO_TOKEN: ec7b9ec6abd35d4b0a6c8a3c326d4a24d1f00bbb8854be33c9e1aa9c94b82fb3
   node:
-    version: 0.10.22
+    version: 0.12.4
+
+dependencies:
+  cache_directories:
+    - node_modules
+  override:
+    - npm prune && npm install:
+        pwd: .

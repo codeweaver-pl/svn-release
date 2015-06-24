@@ -1,0 +1,8 @@
+sudo: false
+language: node_js
+node_js:
+  - "0.12"
+  - "0.11"
+  - "0.10"
+env:
+  - CODECLIMATE_REPO_TOKEN=ec7b9ec6abd35d4b0a6c8a3c326d4a24d1f00bbb8854be33c9e1aa9c94b82fb3

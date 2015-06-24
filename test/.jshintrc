@@ -11,8 +11,8 @@
   "eqnull": true,
   "globalstrict": true,
   "node": true,
-  "globals": {
-    "_": true,
-    "global": true
-  }
+  "predef": [
+    "describe",
+    "it"
+  ]
 }
