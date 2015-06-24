@@ -1,6 +1,6 @@
 {
   "name": "svn-release",
-  "version": "0.1.20",
+  "version": "0.1.1111",
   "description": "Subversion release toolkit for node.js projects",
   "homepage": "https://github.com/codeweaver-pl/svn-release",
   "author": "Tomasz Zabłocki <waxxfetish@gmail.com>",
@@ -19,6 +19,11 @@
     "url": "https://github.com/codeweaver-pl/svn-release/issues"
   },
   "dependencies": {
+    "lodash": "^3.9.3",
+    "q": "^1.4.1",
+    "q-io": "^1.13.1",
+    "q-svn": "0.0.2",
+    "semver": "^4.3.6"
   },
   "devDependencies": {
     "chai": "^3.0.0",
