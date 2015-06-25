@@ -18,9 +18,8 @@ program
   .option('-b, --branch-version <version>', 'override default branch version')
   .option('-n, --branch-name <name>', 'override default branch name')
   .option('-N, --next-version <version>', 'override next version')
-  .action(function(options) {
-            console.log('BRAAAAAAAAAAAANCH', options.branchVersion)
-          });
+  .action(function (options) {
+  });
 
 program
   .command('release')
@@ -28,10 +27,8 @@ program
   .option('-r, --release-version <version>', 'overrides default release version')
   .option('-N, --next-version <version>', 'overrides next version')
   .option('-d, --include-dist', 'include distribution folder on release')
-  .action(function(options) {
-            //app.branch({}).done(console.log);
-          });
-
+  .action(function (options) {
+  });
 
 program.parse(process.argv);
 
