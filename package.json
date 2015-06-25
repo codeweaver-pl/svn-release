@@ -19,6 +19,7 @@
     "url": "https://github.com/codeweaver-pl/svn-release/issues"
   },
   "dependencies": {
+    "commander": "^2.8.1",
     "lodash": "^3.9.3",
     "q": "^1.4.1",
     "q-io": "^1.13.1",
@@ -42,5 +43,8 @@
     "node": ">=0.10 <0.13",
     "npm": "~2.11.3"
   },
-  "main": "lib/svn-release.js"
+  "main": "lib/svn-release.js",
+  "bin": {
+    "svn-release": "bin/svn-release.js"
+  }
 }
