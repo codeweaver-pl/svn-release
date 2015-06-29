@@ -21,10 +21,12 @@
   "dependencies": {
     "commander": "^2.8.1",
     "lodash": "^3.9.3",
+    "npmlog": "^1.2.1",
     "q": "^1.4.1",
     "q-io": "^1.13.1",
-    "q-svn": "0.0.2",
-    "semver": "^4.3.6"
+    "q-svn": "~0.0",
+    "semver": "^4.3.6",
+    "semver-regex": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
