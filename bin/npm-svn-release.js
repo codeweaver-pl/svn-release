@@ -7,3 +7,5 @@ var SvnRelease     = require('../lib/svn-release'),
     lifecycleEvent = process.env.npm_lifecycle_event,
     svnDefaults    = new SvnDefaults(process.env.npm_package_version),
     svnRelease     = new SvnRelease('.');
+
+    svnRelease.release(svnDefaults.releaseOptions);
