@@ -3,3 +3,5 @@ languages:
   JavaScript: true
   PHP: false
   Python: false
+exclude_paths:
+  bin/svn-release.js
