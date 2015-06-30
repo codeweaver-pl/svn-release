@@ -47,6 +47,7 @@
   },
   "main": "lib/svn-release.js",
   "bin": {
-    "svn-release": "bin/svn-release.js"
+    "svn-release": "bin/svn-release.js",
+    "npm-svn-release": "bin/npm-svn-release.js"
   }
 }
