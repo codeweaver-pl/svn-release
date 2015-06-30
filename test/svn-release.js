@@ -1,7 +1,7 @@
 'use strict';
 
 var assert = require("assert"),
-  svnr = require("../lib/svn-release");
+    svnr   = require("../lib/svn-release");
 
 describe('', function () {
   describe('', function () {

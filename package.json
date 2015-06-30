@@ -19,12 +19,12 @@
     "url": "https://github.com/codeweaver-pl/svn-release/issues"
   },
   "dependencies": {
+    "node.svn": "^0.1.8",
     "commander": "^2.8.1",
     "lodash": "^3.9.3",
     "npmlog": "^1.2.1",
     "q": "^1.4.1",
     "q-io": "^1.13.1",
-    "q-svn": "~0.0",
     "semver": "^4.3.6",
     "semver-regex": "^1.0.0"
   },
