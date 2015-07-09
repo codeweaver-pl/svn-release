@@ -77,9 +77,13 @@ if (!program.args.length) {
 }
 
 function doBranch(options) {
-  svnRelease.branch(SvnReleaseCli.branchOptions(options));
+  svnRelease.branch(
+    SvnReleaseCli.branchOptions(options)
+  ).done();
 }
 
 function doRelease(options) {
-  svnRelease.release(SvnReleaseCli.releaseOptions(options));
+  svnRelease.release(
+    SvnReleaseCli.releaseOptions(options)
+  ).done();
 }
