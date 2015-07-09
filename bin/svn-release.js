@@ -79,11 +79,11 @@ if (!program.args.length) {
 function doBranch(options) {
   svnRelease.branch(
     SvnReleaseCli.branchOptions(options)
-  ).done();
+  ).done(console.log, console.err);
 }
 
 function doRelease(options) {
   svnRelease.release(
     SvnReleaseCli.releaseOptions(options)
-  ).done();
+  ).done(console.log, console.err);
 }
