@@ -9,10 +9,9 @@ var program       = require('commander'),
     fs            = require('fs'),
     SvnReleaseCli = require('./svn-release-cli'),
     SvnRelease    = require('../lib/svn-release'),
-    SvnDefaults   = require('../lib/svn-defaults'),
 
     packageJson   = JSON.parse(fs.readFileSync('./package.json', 'utf8')),
-    svnDefaults   = new SvnDefaults(packageJson.version),
+    svnDefaults   = new SvnRelease.SvnDefaults(packageJson.version),
     svnRelease    = new SvnRelease('.');
 
 program

@@ -1,36 +1,17 @@
 #!/usr/bin/env node
 "use strict";
 
-var _           = require('lodash'),
-    log         = require('npmlog'),
-    SvnRelease  = require('../lib/svn-release'),
-    SvnDefaults = require('../lib/svn-defaults'),
+var log            = require('npmlog'),
+    SvnRelease     = require('../lib/svn-release'),
 
-    npmCtx      = parseNpmCtx(),
+    currentVersion = process.env['npm_package_version'],
 
-    svnRelease  = new SvnRelease('.'),
-    svnDefaults = new SvnDefaults(npmCtx.packageVersion);
+    svnRelease     = new SvnRelease('.'),
+    svnDefaults    = new SvnRelease.SvnDefaults(currentVersion);
 
 log['enableColor']();
-log.stream      = process.stdout;
+log.stream         = process.stdout;
 
-log.info('svn-release', 'release version %s', npmCtx.packageVersion);
+log.log('info', 'svn-release', 'release version %s', currentVersion);
 
-svnRelease.release(svnDefaults.releaseOptions);
-
-function parseNpmCtx() {
-
-  return _.chain(process.env)
-    .pick(npmProperty)
-    .reduce(toSvnReleaseProperty, {})
-    .value();
-
-  function npmProperty(value, key) {
-    return _.startsWith(key, 'npm');
-  }
-
-  function toSvnReleaseProperty(memo, value, key) {
-    memo[_.camelCase(key.slice(4))] = value;
-    return memo;
-  }
-}
+svnRelease.release(svnDefaults.releaseOptions());
