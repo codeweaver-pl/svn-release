@@ -43,11 +43,10 @@
   },
   "engines": {
     "node": ">=0.10 <0.13",
-    "npm": "~2.11.3"
+    "npm": "~2.11.2"
   },
   "main": "lib/svn-release.js",
   "bin": {
-    "svn-release": "bin/svn-release.js",
-    "npm-svn-release": "bin/npm-svn-release.js"
+    "svn-release": "bin/svn-release.js"
   }
 }
