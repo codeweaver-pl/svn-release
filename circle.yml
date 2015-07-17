@@ -14,4 +14,4 @@ dependencies:
 
 test:
   post:
-    - codeclimate < coverage/lcov.info
+    - npm run-script coverage-upload

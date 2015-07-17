@@ -2,6 +2,7 @@
 [![CircleCI](https://img.shields.io/circleci/project/codeweaver-pl/svn-release/master.svg?style=shield)](https://circleci.com/gh/codeweaver-pl/svn-release)
 
 [![Code Climate](https://codeclimate.com/github/codeweaver-pl/svn-release/badges/gpa.svg)](https://codeclimate.com/github/codeweaver-pl/svn-release)
+[![Test Coverage](https://codeclimate.com/github/codeweaver-pl/svn-release/badges/coverage.svg)](https://codeclimate.com/github/codeweaver-pl/svn-release/coverage)
 
 [![dependencies](https://david-dm.org/codeweaver-pl/svn-release.svg)](https://david-dm.org/codeweaver-pl/svn-release)
 [![devDependencies](https://david-dm.org/codeweaver-pl/svn-release/dev-status.svg)](https://david-dm.org/codeweaver-pl/svn-release#info=devDependencies)
