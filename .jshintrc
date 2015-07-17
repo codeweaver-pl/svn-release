@@ -12,7 +12,6 @@
   "globalstrict": true,
   "node": true,
   "globals": {
-    "_": true,
     "global": true
   }
 }

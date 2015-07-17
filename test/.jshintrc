@@ -11,8 +11,5 @@
   "eqnull": true,
   "globalstrict": true,
   "node": true,
-  "predef": [
-    "describe",
-    "it"
-  ]
+  "mocha": true
 }
