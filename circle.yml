@@ -4,9 +4,14 @@ machine:
   node:
     version: 0.12.4
 
+
 dependencies:
   cache_directories:
     - node_modules
   override:
     - npm prune && npm install:
         pwd: .
+
+test:
+  post:
+    - codeclimate < coverage/lcov.info

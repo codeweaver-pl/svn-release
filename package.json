@@ -39,7 +39,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec && codeclimate < coverage/lcov.info"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
   },
   "engines": {
     "node": ">=0.10 <0.13",
