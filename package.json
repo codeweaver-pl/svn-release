@@ -1,6 +1,6 @@
 {
   "name": "svn-release",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Subversion release toolkit for node.js projects",
   "homepage": "https://github.com/codeweaver-pl/svn-release",
   "author": "Tomasz Zabłocki <waxxfetish@gmail.com>",
