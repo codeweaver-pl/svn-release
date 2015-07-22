@@ -7,7 +7,7 @@ var assert = require("assert"),
 describe('SvnRelease', function () {
   describe('x', function () {
     it('x', function () {
-      assert.equal(true, true, "msg");
+      assert.equal(true, false, "msg");
     });
   });
 });
