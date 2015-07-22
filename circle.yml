@@ -15,3 +15,5 @@ dependencies:
 test:
   post:
     - npm run-script coverage-upload
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - cp ./test-results.xml $CIRCLE_TEST_REPORTS/junit/
