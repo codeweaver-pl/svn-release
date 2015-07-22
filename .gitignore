@@ -8,3 +8,7 @@ node_modules
 # IDE Files
 *.iml
 .idea
+
+# Build artifacts
+test-results.xml
+coverage
