@@ -1,11 +1,11 @@
 'use strict';
 
 var assert = require("assert"),
-    svnr   = require("../lib/svn-release");
+    SvnRelease = require("../lib/svn-release");
 
-describe('', function () {
-  describe('', function () {
-    it('', function () {
+describe('SvnRelease', function () {
+  describe('x', function () {
+    it('x', function () {
       assert.equal(true, true, "msg");
     });
   });
