@@ -1,7 +1,7 @@
 'use strict';
 
-var expect      = require("chai").expect,
-    SvnDefaults = require("../lib/svn-release").SvnDefaults,
+var expect      = require('chai').expect,
+    SvnDefaults = require('../lib/svn-release').SvnDefaults,
     svnDefaults = new SvnDefaults('1.2.3');
 
 describe('SvnDefaults', function () {
@@ -22,7 +22,6 @@ describe('SvnDefaults', function () {
   });
 
   describe('#branchVersion', function () {
-
     it('should return current version', function () {
       expect(svnDefaults.branchVersion).to.equal('1.2.3');
     });
@@ -55,10 +54,10 @@ describe('SvnDefaults', function () {
   describe('#branchOptions()', function () {
     it('should return current version', function () {
       expect(svnDefaults.branchOptions()).to.deep.equal({
-          branchName:    "1.2",
-          branchVersion: "1.2.3",
-          branches:      "branches",
-          nextVersion:   "1.3.0"
+          branchName:    '1.2',
+          branchVersion: '1.2.3',
+          branches:      'branches',
+          nextVersion:   '1.3.0'
         }
       );
     });
@@ -68,10 +67,10 @@ describe('SvnDefaults', function () {
     it('should return current version', function () {
       expect(svnDefaults.releaseOptions()).to.deep.equal({
         dist:           null,
-        nextVersion:    "1.2.4",
-        releaseName:    "1.2.3",
-        releaseVersion: "1.2.3",
-        releases:       "tags"
+        nextVersion:    '1.2.4',
+        releaseName:    '1.2.3',
+        releaseVersion: '1.2.3',
+        releases:       'tags'
       });
     });
   });
