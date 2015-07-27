@@ -1,13 +1,15 @@
 'use strict';
 
-var assert = require('assert'),
+var expect     = require('chai').expect,
+
     SvnRelease = require('../lib/svn-release'),
     svnRelease = new SvnRelease('.');
 
-describe('SvnRelease', function () {
-  describe('', function () {
-    it('', function () {
-      assert.equal(true, true, 'msg');
+describe('SvnDefaults', function () {
+
+  describe('#()', function () {
+    it('should ', function () {
+      expect(true).to.equal(true);
     });
   });
 });
