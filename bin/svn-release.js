@@ -23,7 +23,7 @@ var URI_REGEX     = /^(((?:(?:[a-z0-9-._~!$&'()*+,;=:]|%[0-9A-F]{2})*)@)?((?:[a-
 
 program
   .usage('<cmd> [options...]')
-  .version('0.0.1', '-V, --version')
+  .version(packageJson.version, '-V, --version')
   .allowUnknownOption(false)
   .option('-I, --interactive',
           'perform branch or release tasks in interactive mode',
