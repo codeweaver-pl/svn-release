@@ -54,7 +54,6 @@ npm install -g svn-release
 #### Performing releases
 
 ```javascript
-
   var pkg = require('./package.json'),
     svnOptions = {cwd: '.'},
     releaseOptions = new SvnRelease.SvnDefaults(pkg.version)
@@ -62,7 +61,7 @@ npm install -g svn-release
 
   return new SvnRelease(svnOptions)
     .release(releaseOptions);
-**
+```
   
 ### CLI
  
@@ -106,7 +105,7 @@ Options:
 
 #### Branching
 
-`svn-release branch --help`:
+`svn-release branch --help` :
 
 ```
 Usage: branch [options]
